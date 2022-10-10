@@ -1,5 +1,5 @@
 {
-    "name": "pjvideogames.pathfinding.com",
+    "name": "PjVideoGames.Pathfinding",
     "rootNamespace": "Pathfinding",
     "references": [],
     "includePlatforms": [],
