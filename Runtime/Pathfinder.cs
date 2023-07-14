@@ -8,7 +8,7 @@ namespace Pathfinding
         public static List<T> GetNodePath<T>(
             IDistanceHeuristic<T> distanceHeuristic,
             T startNode, 
-            T goalNode) where T : class, INode
+            T goalNode) where T : INode
         {
             if (startNode == null)
             {
