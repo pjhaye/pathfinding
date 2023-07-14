@@ -1,6 +1,6 @@
 {
   "name": "com.pjvideogames.pathfinding",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "displayName": "Pathfinding",
   "description": "Very basic implementation of A* Pathfinding",
   "unity": "2021.1",

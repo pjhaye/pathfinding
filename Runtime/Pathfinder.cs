@@ -54,7 +54,7 @@ namespace Pathfinding
                 open.Remove(currentNode);
                 closedList.Add(currentNode);
 
-                if (currentNode.Node == goalNode)
+                if (currentNode.Node.Equals(goalNode))
                 {
                     var path = new List<T>();
                     while (currentNode.Parent != null)
@@ -73,7 +73,7 @@ namespace Pathfinding
                     var alreadyClosed = false;
                     foreach (var closedNode in closedList)
                     {
-                        if (closedNode.Node == neighborNode)
+                        if (closedNode.Node.Equals(neighborNode))
                         {
                             alreadyClosed = true;
                             break;
@@ -102,7 +102,7 @@ namespace Pathfinding
                     PathfinderNode alreadyOpenNode = null;
                     foreach (var openNode in open)
                     {
-                        if (openNode.Node == neighborNode)
+                        if (openNode.Node.Equals(neighborNode))
                         {
                             alreadyOpenNode = openNode;
                             alreadyOpened = true;
